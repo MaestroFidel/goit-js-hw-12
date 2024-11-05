@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search App</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+</head>
+<body>
+  <section class="gallery-section">
+    <div class="container">
+  <form class="search-form js-search-form">
+    <input
+      class="search-input js-search-input"
+      type="text"
+      name="user_query"
+      placeholder="Search images..." required
+    />
+    <button class="search-button" type="submit">Search</button>
+  </form>
+ 
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+ <span class="loader loader-hidden js-loader"></span>
 
-    <load src="./partials/footer.html" />
+    <ul class="gallery js-gallery"></ul>
+   
+    </div>
+  </section>
+  
 
-    <script type="module" src="./main.js"></script>
-  </body>
-</html>
+  <script type="module" src="./main.js"></script>
+</body>
+</html> 
