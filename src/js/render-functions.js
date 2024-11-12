@@ -1,7 +1,5 @@
 
 
-// import SimpleLightbox from 'simplelightbox';
-// import 'simplelightbox/dist/simple-lightbox.min.css';
 
 export const createGalleryCard = imgInfo => {
   return `
@@ -20,11 +18,7 @@ export const createGalleryCard = imgInfo => {
 
 };
 
-// export const displayPhotos = (photos, galleryImg, lightbox) => {
-//   const galleryMarkup = photos.map(createGalleryCard).join('');
-//   galleryImg.innerHTML = galleryMarkup;
-//   lightbox.refresh();
-// };
+
 
 
 

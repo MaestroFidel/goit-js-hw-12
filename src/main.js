@@ -33,6 +33,7 @@ const onSearchFormSubmit = async event => {
           }
           currentPage = 1;
 
+        
           waitLoader.classList.remove('loader-hidden');
     try {
         const data = await fetchPhotos(searchValue, currentPage);
@@ -44,6 +45,7 @@ const onSearchFormSubmit = async event => {
                 });
                 galleryImg.innerHTML = '';
                
+                moreButton.classList.add('more-button-hidden');
                 return;
               };
             
@@ -52,7 +54,7 @@ const onSearchFormSubmit = async event => {
               .join('');
               galleryImg.innerHTML = galleryCardTemplate;
 
-              scrSmooth();
+              // scrSmooth();
 
               lightbox.refresh();
               searchImg.reset();
